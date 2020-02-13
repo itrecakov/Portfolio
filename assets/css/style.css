@@ -110,7 +110,8 @@ footer {
   height: 50px;
 }
 
-h3, h2 {
+h3,
+h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
@@ -187,15 +188,15 @@ h3, h2 {
 }
 
 label,
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   display: block;
   width: 100%;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   height: 35px;
   padding: 0 10px;
@@ -207,7 +208,7 @@ textarea {
   height: 200px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   padding: 10px 30px;
   font-size: 18px;
   color: #ffffff;
@@ -215,3 +216,47 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+@media only screen and (max-width: 980px) {
+  .container {
+    padding: 0 20px;
+    max-width: 768px;
+  }
+  #main-container {
+    padding-top: 130px;
+  }
+  .main-section {
+    max-width: 768px;
+  }
+  .work {
+    width: 100%;
+  }
+  .auth-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+@media only screen and (max-width: 640px) {
+  #masthead {
+    position: static;
+    margin-bottom: 20px;
+  }
+  header.container {
+    padding: 0;
+  }
+  #main-container {
+    padding-top: 0;
+  }
+  #logo, .work, .auth-image {
+    width: 100%;
+  }
+  nav {
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+  }
+  nav a {
+    width: 25%;
+    padding-left: 0;
+  }
+  }
